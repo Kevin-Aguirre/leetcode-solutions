@@ -41,4 +41,16 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
+
+        """
+        Approach: we will only be checking the rightmost bit. we can check if the rightmost bit is 1 by simply modding 
+        the number by 2 and adding the result to count. then we shift all the bits over, by right shifting by 1. we repeat
+        this process so long as n is truhty, that is, so long as n is not 0.
+        """
+        count = 0 
+
+        while (n):
+            count += n % 2
+            n = n >> 1
         
+        return count

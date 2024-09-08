@@ -26,10 +26,32 @@ Constraints:
 
 
 """
-class Solution(object):
-    def longestConsecutive(self, nums):
+from typing import List
+
+
+class Solution:
+    def longestConsecutive(self, nums: List[int]) -> int:
         """
-        :type nums: List[int]
-        :rtype: int
+        Approach: Convert the nums list to a set, this will 
+        help remove duplicates. Now we iterate through each element, 
+        if it turns out (element - 1) not in the set, we realize 
+        that we are at the start of a new consecutive sequence whether 
+        it be >= length 1. now, we check how many consecutive elements 
+        are in the set. after we are done, we update the longest 
+        subsequence we have enocuntered with the current one. outside of the 
+        for loop, we return longest. 
         """
+
+
+
+        numsSet = set(nums)
+        longest = 0 
+
+        for n in numsSet: 
+            if (n - 1) not in numsSet: 
+                length = 1
+                while (n + length in numsSet):
+                    length += 1
+                longest = max(longest, length)
         
+        return longest

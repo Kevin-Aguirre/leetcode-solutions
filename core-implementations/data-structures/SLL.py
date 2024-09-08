@@ -1,5 +1,8 @@
 # https://neetcode.io/problems/singlyLinkedList
 
+from typing import List
+
+
 class ListNode:
     def __init__(self):
         self.val = None
