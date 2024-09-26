@@ -31,16 +31,26 @@ Both of the given trees will have values in the range [0, 200].
 
 """
 # Definition for a binary tree node.
-# class TreeNode(object):
+# class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution(object):
-    def leafSimilar(self, root1, root2):
-        """
-        :type root1: TreeNode
-        :type root2: TreeNode
-        :rtype: bool
-        """
-        
+class Solution:
+    def getLeafSequence(self, root): 
+        if (not root):
+            return []
+
+        if (not root.left and not root.right):
+            return [root.val]
+
+        leftArr = self.getLeafSequence(root.left) 
+        rightArr = self.getLeafSequence(root.right) 
+        return leftArr + rightArr
+
+    def leafSimilar(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> bool:
+        root1Seq, root2Seq = [], []
+        root1Seq = self.getLeafSequence(root1)
+        root2Seq = self.getLeafSequence(root2)
+
+        return root1Seq == root2Seq
