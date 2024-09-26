@@ -43,12 +43,20 @@ Constraints:
 # @return -1 if num is higher than the picked number
 #          1 if num is lower than the picked number
 #          otherwise return 0
-# def guess(num):
+# def guess(num: int) -> int:
 
-class Solution(object):
-    def guessNumber(self, n):
-        """
-        :type n: int
-        :rtype: int
-        """
-        
+class Solution:
+    def guessNumber(self, n: int) -> int:
+        left = 1 
+        right = n 
+
+        while left <= right:
+            curr = (left + right) // 2
+            res = guess(curr)
+
+            if (res == -1):
+                right = curr - 1
+            elif (res == 1):
+                left = curr + 1
+            else:
+                return curr
