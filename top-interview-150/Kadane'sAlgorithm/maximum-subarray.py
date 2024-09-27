@@ -34,10 +34,18 @@ Constraints:
 Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
 
 """
-class Solution(object):
-    def maxSubArray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+class Solution:
+    def maxSubArray(self, nums: List[int]) -> int:
+        maxSum = float('-inf')
+        currentSum = 0
         
+        for num in nums:
+            currentSum += num
+            
+            if currentSum > maxSum:
+                maxSum = currentSum
+            
+            if currentSum < 0:
+                currentSum = 0
+        
+        return maxSum
