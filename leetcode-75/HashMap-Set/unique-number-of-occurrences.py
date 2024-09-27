@@ -29,10 +29,18 @@ Constraints:
 
 
 """
-class Solution(object):
-    def uniqueOccurrences(self, arr):
-        """
-        :type arr: List[int]
-        :rtype: bool
-        """
+class Solution:
+    def uniqueOccurrences(self, arr: List[int]) -> bool:
+        s = {}
+        goodolset = set()
+
+        for elem in arr: 
+            if elem not in s:
+                s[elem] = 1
+            else:
+                s[elem] += 1
         
+        for val in s.values():
+            goodolset.add(val)
+        
+        return len(goodolset) == len(s.values())
