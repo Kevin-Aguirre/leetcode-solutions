@@ -34,11 +34,23 @@ Constraints:
 
 
 """
-class Solution(object):
-    def findDifference(self, nums1, nums2):
-        """
-        :type nums1: List[int]
-        :type nums2: List[int]
-        :rtype: List[List[int]]
-        """
+class Solution:
+    def findDifference(self, nums1: List[int], nums2: List[int]) -> List[List[int]]:
+        nums1Set, nums2Set = set(), set()
+        res1, res2 = [], []
+
+        for i in range(len(nums1)):
+            nums1Set.add(nums1[i])
+
+        for i in range(len(nums2)):
+            nums2Set.add(nums2[i])
+
+        for elem in nums1Set:
+            if elem not in nums2Set:
+                res1.append(elem)
+
+        for elem in nums2Set:
+            if elem not in nums1Set:
+                res2.append(elem)
         
+        return [res1, res2]
