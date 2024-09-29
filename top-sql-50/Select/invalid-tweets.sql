@@ -43,3 +43,6 @@ Tweet 2 has length = 33. It is an invalid tweet.
 
 */
 -- Write your PostgreSQL query statement below
+SELECT tweet_id 
+FROM Tweets
+WHERE LENGTH(content) > 15;
