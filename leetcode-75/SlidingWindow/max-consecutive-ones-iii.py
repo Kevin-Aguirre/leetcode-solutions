@@ -28,11 +28,26 @@ nums[i] is either 0 or 1.
 
 
 """
-class Solution(object):
-    def longestOnes(self, nums, k):
-        """
-        :type nums: List[int]
-        :type k: int
-        :rtype: int
-        """
-        
+# https://leetcode.com/problems/max-consecutive-ones-iii/solutions/719833/python3-sliding-window-with-clear-example-explains-why-the-soln-works/?envType=study-plan-v2&envId=leetcode-75
+
+class Solution:
+    def longestOnes(self, nums: List[int], k: int) -> int:
+        left = 0 
+        for right in range(len(nums)):
+
+            # if we encounter a 0, then we decrement k 
+            if nums[right] == 0:
+                k -= 1
+            #otherwise no change to k 
+
+            #if k < 0 it means we need to move the left part of the window forward because we have 
+            #encoutnered too many 0;s so we need to try and remove the extra zeros 
+            if k < 0:
+                #if the left one was zero then we adjust k
+                if nums[left] == 0:
+                    k += 1
+                #regardless of wether we had a 1 or 0 we can move teh left side by 1
+                #if we keep seeing 1's the windows moves as is 
+                left += 1
+        return right - left + 1
+            
