@@ -34,11 +34,17 @@ s consists of lowercase English letters.
 
 
 """
-class Solution(object):
-    def maxVowels(self, s, k):
-        """
-        :type s: str
-        :type k: int
-        :rtype: int
-        """
+class Solution:
+    def maxVowels(self, s: str, k: int) -> int:
+        vowels = 'aeiou'
         
+        l, vowelCount, maxCount = 0, 0, 0
+        for r in range(len(s)):
+            vowelCount += 1 if s[r] in vowels else 0 
+
+            if (r - l + 1 > k):
+                vowelCount -= 1 if s[l] in vowels else 0
+                l += 1
+
+            maxCount = max(maxCount, vowelCount)
+        return maxCount
