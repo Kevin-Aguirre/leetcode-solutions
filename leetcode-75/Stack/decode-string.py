@@ -34,10 +34,27 @@ All the integers in s are in the range [1, 300].
 
 
 """
-class Solution(object):
-    def decodeString(self, s):
-        """
-        :type s: str
-        :rtype: str
-        """
-        
+class Solution:
+    def decodeString(self, s: str) -> str:
+        stack = []
+
+        for c in s:
+            if c != ']':
+                stack.append(c)
+            # closing bracket means we have encountered a completed expression, time to evaluate it 
+            else:
+                # extract substring to be multiplied
+                currString = ''
+                while (stack[-1] != "["):
+                    currString = stack.pop() + currString
+                
+                # removes the '[' character 
+                stack.pop()
+
+                #extract full number
+                currNum = ''
+                while (stack and stack[-1].isdigit()):
+                    currNum = stack.pop() + currNum 
+                stack.append(currString * int(currNum))
+        return "".join(stack)
+

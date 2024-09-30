@@ -52,11 +52,28 @@ word1 and word2 contain only lowercase English letters.
 
 
 """
-class Solution(object):
-    def closeStrings(self, word1, word2):
-        """
-        :type word1: str
-        :type word2: str
-        :rtype: bool
-        """
+class Solution:
+    def closeStrings(self, word1: str, word2: str) -> bool:
+        if (len(word1) != len(word2)):
+            return False
         
+        freq1, freq2 = {}, {}
+        for c in word1:
+            try:
+                temp = freq1[c]
+                freq1[c] += 1
+            except KeyError:
+                freq1[c] = 1
+        
+        for c in word2:
+            try:
+                temp = freq2[c]
+                freq2[c] += 1
+            except KeyError:
+                freq2[c] = 1
+        
+        if set(freq1.keys()) != set(freq2.keys()):
+            return False
+
+        return sorted(freq1.values()) == sorted(freq2.values())
+                        

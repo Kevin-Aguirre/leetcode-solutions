@@ -34,10 +34,21 @@ n == grid.length == grid[i].length
 
 
 """
-class Solution(object):
-    def equalPairs(self, grid):
-        """
-        :type grid: List[List[int]]
-        :rtype: int
-        """
+class Solution:
+    def equalPairs(self, grid: List[List[int]]) -> int:
+        count = 0 
+        rows = {}
+        for i in range(len(grid)):
+            currRow = tuple(grid[i]) 
+            if currRow not in rows.keys():
+                rows[currRow] = 1
+            else:
+                rows[currRow] += 1
         
+        for j in range(len(grid)):
+            col = tuple(grid[i][j] for i in range(len(grid)))
+
+            if col in rows:
+                count += rows[col]
+
+        return count

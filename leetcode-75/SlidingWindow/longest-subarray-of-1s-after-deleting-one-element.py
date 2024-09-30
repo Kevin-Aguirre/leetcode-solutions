@@ -33,10 +33,20 @@ nums[i] is either 0 or 1.
 
 
 """
-class Solution(object):
-    def longestSubarray(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
-        
+class Solution:
+    def longestSubarray(self, nums: List[int]) -> int:
+        res = 0 
+        l = 0 
+        zeroes = 0
+        for r in range(len(nums)):
+            if nums[r] == 0:
+                zeroes += 1
+
+            while zeroes > 1:
+                if (nums[l] == 0):
+                    zeroes -= 1
+                l += 1
+
+            res = max(res, r - l + 1 - zeroes)             
+
+        return res if res < len(nums) else res - 1
