@@ -51,10 +51,28 @@ The number of nodes in the list is in the range [1, 105].
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
-class Solution(object):
-    def deleteMiddle(self, head):
-        """
-        :type head: Optional[ListNode]
-        :rtype: Optional[ListNode]
-        """
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def deleteMiddle(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if not head or not head.next:
+            return None
         
+        length = 0
+        curr = head 
+        while (curr):
+            length += 1
+            curr = curr.next 
+        
+        midpoint =  (length // 2)
+
+        prev, curr = None, head 
+        for pointer in range(midpoint):
+            prev = curr 
+            curr = curr.next 
+        prev.next = curr.next 
+        
+        return head 
