@@ -24,10 +24,18 @@ n == nums.length
  
 Follow-up: Could you solve the problem in linear time and in O(1) space?
 """
-class Solution(object):
-    def majorityElement(self, nums):
-        """
-        :type nums: List[int]
-        :rtype: int
-        """
+class Solution:
+    def majorityElement(self, nums: List[int]) -> int:
+        count = 0
+        candidate = 0
         
+        for num in nums:
+            if count == 0:
+                candidate = num
+            
+            if num == candidate:
+                count += 1
+            else:
+                count -= 1
+        
+        return candidate
