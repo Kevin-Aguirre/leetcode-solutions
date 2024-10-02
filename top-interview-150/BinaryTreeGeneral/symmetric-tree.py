@@ -28,15 +28,21 @@ The number of nodes in the tree is in the range [1, 1000].
 Follow up: Could you solve it both recursively and iteratively?
 """
 # Definition for a binary tree node.
-# class TreeNode(object):
+# class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
 #         self.val = val
 #         self.left = left
 #         self.right = right
-class Solution(object):
-    def isSymmetric(self, root):
-        """
-        :type root: TreeNode
-        :rtype: bool
-        """
+class Solution:
+    def isMirror(self, n1, n2):
+        if not n1 and not n2:
+            return True 
         
+        if not n1 or not n2:
+            return False 
+        
+        return n1.val == n2.val and self.isMirror(n1.left, n2.right) and self.isMirror(n1.right, n2.left)
+
+
+    def isSymmetric(self, root: Optional[TreeNode]) -> bool: 
+        return self.isMirror(root.left, root.right)
