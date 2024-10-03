@@ -45,11 +45,27 @@ s consists of English letters (lower-case and upper-case), ',' and '.'.
 
 
 """
-class Solution(object):
-    def convert(self, s, numRows):
-        """
-        :type s: str
-        :type numRows: int
-        :rtype: str
-        """
+class Solution:
+    def convert(self, s: str, numRows: int) -> str:
+        if (numRows == 1 or numRows >= len(s)):
+            return s 
+
+        arr = [[] for _ in range(numRows)]
+        d = 1
+        ind = 0 
+        for char in s:
+            arr[ind].append(char)
+
+            if (ind == 0):
+                d = 1
+
+            if (ind == numRows - 1):
+                d = -1 
+            
+            ind += d
         
+        for i in range(numRows):
+            arr[i] = ''.join(arr[i])
+        return ''.join(arr)
+        
+
