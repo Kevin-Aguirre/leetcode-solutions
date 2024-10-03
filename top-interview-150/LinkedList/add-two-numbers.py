@@ -34,15 +34,39 @@ It is guaranteed that the list represents a number that does not have leading ze
 
 """
 # Definition for singly-linked list.
-# class ListNode(object):
+# class ListNode:
 #     def __init__(self, val=0, next=None):
 #         self.val = val
 #         self.next = next
-class Solution(object):
-    def addTwoNumbers(self, l1, l2):
-        """
-        :type l1: ListNode
-        :type l2: ListNode
-        :rtype: ListNode
-        """
-        
+class Solution:
+    def addTwoNumbers(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
+        c1, c2 = l1, l2 
+
+        dummy = ListNode(0)
+        res = dummy
+        carry = 0
+        while (c1 and c2):
+            currSum = c1.val + c2.val
+            if carry: 
+                currSum += carry
+            carry = currSum // 10 
+            leftover = currSum % 10
+            res.next = ListNode(leftover)
+            res = res.next 
+            c1 = c1.next 
+            c2 = c2.next 
+    
+
+        c3 = c1 if c1 else c2
+        while (c3):
+            currSum = c3.val + carry 
+            carry = currSum // 10 
+            leftover = currSum % 10 
+            res.next = ListNode(leftover)
+            res = res.next
+            c3 = c3.next 
+
+        if carry:
+            res.next = ListNode(carry)
+
+        return dummy.next
