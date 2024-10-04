@@ -1,5 +1,20 @@
 # https://leetcode.com/problems/design-a-stack-with-increment-operation/
 # 1381. Design a Stack With Increment Operation
+
+"""
+Approach 1: Array Solution 
+
+Simply intialize an array with a fixed size and keep track of its size
+to do operations such as pop/push/increment.
+
+Time Complexity: 
+    push - O(1)
+    pop - O(1)
+    increment - O(k) 
+Space Complexity: 
+    O(maxSize)
+
+"""
 class CustomStack:
 
     def __init__(self, maxSize: int):

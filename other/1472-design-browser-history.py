@@ -1,6 +1,16 @@
 # 1472. Design Browser History
 # https://leetcode.com/problems/design-browser-history/description/?envType=problem-list-v2&envId=doubly-linked-list
 
+
+"""
+Approach 1: 
+
+Time Complexity: 
+    visit - O(1)
+    back - O(k) where k = steps
+    forward - O(k) where k = steps
+Space Complexity: O(n)
+"""
 class ListNode:
     def __init__(self, data):
         self.val = data
