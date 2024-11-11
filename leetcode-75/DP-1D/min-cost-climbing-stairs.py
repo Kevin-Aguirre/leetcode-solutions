@@ -38,6 +38,10 @@ Constraints:
 
 """
 class Solution(object):
+    """
+    this is not my implementation, it appears to be using a dp approach with 2 variables, which is valid, 
+    since we only need to know 2 values at a time 
+    """
     def minCostClimbingStairs(self, cost):
         """
         :type cost: List[int]
@@ -57,4 +61,12 @@ class Solution(object):
             dp0=dp1
             dp1=cur
             
+
+
         return min(dp0,dp1)
+
+class Solution:
+    def minCostClimbingStairs(self, cost: List[int]) -> int:
+        for i in range(len(cost) - 3, -1, -1):
+            cost[i] += min(cost[i+1], cost[i+2])
+        return min(cost[0], cost[1])
