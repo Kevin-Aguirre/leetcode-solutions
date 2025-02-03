@@ -14,6 +14,9 @@ class Solution:
     Then, we simply see if there exists a person y such that y trusts 0 people, and n-1 people (excluding y) trust y.
 
     Use a hashmap to map each person (in 1...n) to amount of people they trust/amount of people that trust them.
+
+
+    I wonder if making an adjacency list representation for the edges would be a quicker method?
     """
     def findJudge(self, n: int, trust: List[List[int]]) -> int:
         # trustMap[entity] = [peoplethatTrustEntity, peopleEntityTrusts]
