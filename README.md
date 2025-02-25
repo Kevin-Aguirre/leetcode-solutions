@@ -16,7 +16,7 @@ Although the format may vary from problem to problem, in general, I will list al
  
  
  
- 
+im thinking of implementing some kind of tag system, where each problem will have its own directory, and in the readme i could include tags like linked list, hashmap, or two pointers for two sum, and if i really want to see categories at some point i could have some scripts that parses through the readmes and sorts them by cateogry  
  
  
  
