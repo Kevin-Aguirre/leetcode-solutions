@@ -25,7 +25,7 @@ I prefer this over categorizing a problem under a specific folder like "Arrays" 
 ## Solution Format 
 My solutions are formatted as follows: 
 
-```
+```python
 # {dateSolved} 
 # https://leetcode.com/problems/{problem-slug}
 # Tags: Array,TwoPointers,LinkedList
