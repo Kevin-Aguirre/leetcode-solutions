@@ -17,13 +17,9 @@ manipulate metadata
 add_problem_usage = """
 add-problem usage 
 
-add-problem {leetcodelink} [with-tags tag1,tag2,...]
+add-problem {leetcodelink} 
     {leetcodelink} - required
-        A link that should be of the format https://leetcode.com/problems/{problem-slug}, this is required 
-    
-    with-tags - optional (but recommended)
-        An optional (but highly-suggested) flag to add multiple flags to a problem. e.g. with-tags Array,String,LinkedList
-        Tags must exist in metadata file
+        A link that should be of the format https://leetcode.com/problems/{problem-slug}/
 
 creates a folder in problems directory, throws error if folder already exists       
 """
@@ -43,7 +39,7 @@ sort-by-tag usage
 
 sort-by-tag {tag} {ofilename}
     {tag} - required
-        must be a tag in list of allowed tags in metadata 
+        must be a tag in list of seen tags in metadata 
     {ofilename} - optional 
         will be the name of the md file created displaying output. default name is sort-by-tag.md
 
@@ -63,14 +59,4 @@ top_topics {n} {p} {outfilename}
         name of the md file created displaying output. default name is top_topics.md
 
 returns information regarding most studied topics 
-"""
-
-add_tags_usage = """
-add_tags usage
-
-add_tags_usage tag1 tag2 tag3
-    tag# - required 
-        adds the tag to list of accepted tags in metadata
-        will notify you if a tag could not be added (already exists in metadata), but will continue
-
 """
