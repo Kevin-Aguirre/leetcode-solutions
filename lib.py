@@ -1,23 +1,13 @@
 from pathlib import Path
 from bs4 import BeautifulSoup
-from selenium import webdriver
-from PySide6 import QtCore, QtWidgets
 import datetime
-import sys
-import os
-import shutil
 import re
-import json
 import requests
 import usage
 
 pattern = r"^https://leetcode\.com/problems/.+/"
 
-# https://leetcode.com/problems/add-two-numbers/
-
-"""
-args[2] = link
-"""
+# TODO: write to metadata, maybe write topics somewhere in read me or make readme more reobust with info about date and time 
 def handle_add_problem(lcLink: str):
     if (re.match(pattern, lcLink) is None):
         print(f"Leetcode Link not in proper format\n{usage.add_problem_usage}")
@@ -42,16 +32,19 @@ def handle_add_problem(lcLink: str):
     # create directory and files 
     problems_dir = Path.cwd() / "problems"
     newFolder = problems_dir / f"{qID}-{qSlug}"
+    if newFolder.exists() and newFolder.is_dir():
+        print(f"A directory for this problem already exists.")
+        return
     newFolder.mkdir(parents=True, exist_ok=True)
     readme = newFolder / "README.md"
     solution = newFolder / "main.py"
-    htmlfile = newFolder / "test.html"
+    htmlfile = newFolder / "problem.html"
 
     # write to html 
-    htmlfile.write_text(f"<!DOCTYPE html><html><body>{qProblemHTML}</body></html> ")
+    htmlfile.write_text(f"<!DOCTYPE html><html><body><h1>{qID}. {qTitle}</h1><p>{qDifficulty}</p>\n{qProblemHTML}</body></html> ")
 
     # write to readme 
-    readme.write_text(f"# {qID}. {qTitle}\n my solution here")
+    readme.write_text(f"# {qID}. {qTitle}\n\n## Solution 1\n")
 
     # write to solution     
     for code_snip_dict in r['data']['question']['codeSnippets']:
