@@ -1,4 +1,21 @@
 {
     "lc-problems": [],
-    "pe-problems": []
+    "pe-problems": [
+        {
+            "link": "https://projecteuler.net/problem=1",
+            "entry-name": "1-multiples-of-3-or-5",
+            "title-slug": "multiples-of-3-or-5",
+            "problem-number": 1,
+            "difficulty": "5",
+            "date-added": "02-27-2025"
+        },
+        {
+            "link": "https://projecteuler.net/problem=2",
+            "entry-name": "2-even-fibonacci-numbers",
+            "title-slug": "even-fibonacci-numbers",
+            "problem-number": 2,
+            "difficulty": "5",
+            "date-added": "02-27-2025"
+        }
+    ]
 }

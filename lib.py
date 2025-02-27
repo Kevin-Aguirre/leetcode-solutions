@@ -80,9 +80,7 @@ def handle_add_problem(link: str):
         fileData = None
         with open('metadata.json', 'r') as file:
             fileData = json.load(file)
-        print(fileData)
         fileData['lc-problems'].append(meta_entry)
-        print(fileData)
         with open('metadata.json', 'w') as ofile:
             json.dump(fileData, ofile, indent=4)
         
@@ -128,9 +126,7 @@ def handle_add_problem(link: str):
         fileData = None
         with open('metadata.json', 'r') as file:
             fileData = json.load(file)
-        print(fileData)
         fileData['pe-problems'].append(meta_entry)
-        print(fileData)
         with open('metadata.json', 'w') as ofile:
             json.dump(fileData, ofile, indent=4)
 
