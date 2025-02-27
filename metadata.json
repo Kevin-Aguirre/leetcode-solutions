@@ -1,13 +1,4 @@
 {
-    "all-topics": [],
-    "problems": [
-        {
-            "link": "https://leetcode.com/problems/palindrome-number/",
-            "slug": "palindrome-number",
-            "entry-name": "9-palindrome-number",
-            "topics": ["Math"],
-            "date-added": "datehere",
-            "difficulty": "easy/med/hard"
-        }
-    ]
+    "lc-problems": [],
+    "pe-problems": []
 }
