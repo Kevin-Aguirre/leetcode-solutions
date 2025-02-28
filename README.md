@@ -1,5 +1,5 @@
-# LeetCode Solutions
-This is a repository where I keep my Leetcode solutions! I've restructured this repository a few times so it likely doesn't contain all the problems I've solved, I only add a new entry for each new folder I solve. 
+# Programming Problems Solutions
+This is a repository where I keep my solutions for various sites that host programming questions like Leetcode, Project Euler, and maybe others in the future! I've restructured this repository a few times so it likely doesn't contain all the problems I've solved.
 
 
 ## Repo Format 
