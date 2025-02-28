@@ -16,6 +16,14 @@
             "problem-number": 2,
             "difficulty": "5",
             "date-added": "02-27-2025"
+        },
+        {
+            "link": "https://projecteuler.net/problem=3",
+            "entry-name": "3-largest-prime-factor",
+            "title-slug": "largest-prime-factor",
+            "problem-number": 3,
+            "difficulty": "5",
+            "date-added": "02-28-2025"
         }
     ]
 }
