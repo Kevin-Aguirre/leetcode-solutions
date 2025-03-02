@@ -32,6 +32,14 @@
             "problem-number": 4,
             "difficulty": "5",
             "date-added": "02-28-2025"
+        },
+        {
+            "link": "https://projecteuler.net/problem=5",
+            "entry-name": "5-smallest-multiple",
+            "title-slug": "smallest-multiple",
+            "problem-number": 5,
+            "difficulty": "5",
+            "date-added": "03-01-2025"
         }
     ]
 }
