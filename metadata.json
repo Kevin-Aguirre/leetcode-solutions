@@ -48,6 +48,22 @@
             "problem-number": 6,
             "difficulty": "5",
             "date-added": "03-01-2025"
+        },
+        {
+            "link": "https://projecteuler.net/problem=7",
+            "entry-name": "7-10-001st-prime",
+            "title-slug": "10-001st-prime",
+            "problem-number": 7,
+            "difficulty": "5",
+            "date-added": "03-02-2025"
+        },
+        {
+            "link": "https://projecteuler.net/problem=8",
+            "entry-name": "8-largest-product-in-a-series",
+            "title-slug": "largest-product-in-a-series",
+            "problem-number": 8,
+            "difficulty": "5",
+            "date-added": "03-02-2025"
         }
     ]
 }
