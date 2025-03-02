@@ -47,7 +47,6 @@ So, getting rid of the reused factors gets us
 
 from collections import Counter
 
-# is nums1 a sublist of nums2
 def isSublist(nums1: list[int], nums2: list[int]):
     for n in nums1:
         if nums1.count(n) > nums2.count(n): return False

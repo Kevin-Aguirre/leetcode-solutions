@@ -40,6 +40,14 @@
             "problem-number": 5,
             "difficulty": "5",
             "date-added": "03-01-2025"
+        },
+        {
+            "link": "https://projecteuler.net/problem=6",
+            "entry-name": "6-sum-square-difference",
+            "title-slug": "sum-square-difference",
+            "problem-number": 6,
+            "difficulty": "5",
+            "date-added": "03-01-2025"
         }
     ]
 }
