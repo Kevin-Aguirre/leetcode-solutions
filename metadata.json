@@ -64,6 +64,22 @@
             "problem-number": 8,
             "difficulty": "5",
             "date-added": "03-02-2025"
+        },
+        {
+            "link": "https://projecteuler.net/problem=9",
+            "entry-name": "9-special-pythagorean-triplet",
+            "title-slug": "special-pythagorean-triplet",
+            "problem-number": 9,
+            "difficulty": "5",
+            "date-added": "03-02-2025"
+        },
+        {
+            "link": "https://projecteuler.net/problem=10",
+            "entry-name": "10-summation-of-primes",
+            "title-slug": "summation-of-primes",
+            "problem-number": 10,
+            "difficulty": "5",
+            "date-added": "03-03-2025"
         }
     ]
 }
