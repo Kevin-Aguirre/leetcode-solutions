@@ -3,6 +3,8 @@
 # Difficulty rating: 5%
 # 03-05-2025
 
+
+
 import math 
 def getFactors(n):
     factors = set()
