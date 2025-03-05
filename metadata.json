@@ -80,6 +80,22 @@
             "problem-number": 10,
             "difficulty": "5",
             "date-added": "03-03-2025"
+        },
+        {
+            "link": "https://projecteuler.net/problem=11",
+            "entry-name": "11-largest-product-in-a-grid",
+            "title-slug": "largest-product-in-a-grid",
+            "problem-number": 11,
+            "difficulty": "5",
+            "date-added": "03-04-2025"
+        },
+        {
+            "link": "https://projecteuler.net/problem=12",
+            "entry-name": "12-highly-divisible-triangular-number",
+            "title-slug": "highly-divisible-triangular-number",
+            "problem-number": 12,
+            "difficulty": "5",
+            "date-added": "03-05-2025"
         }
     ]
 }
