@@ -96,6 +96,14 @@
             "problem-number": 12,
             "difficulty": "5",
             "date-added": "03-05-2025"
+        },
+        {
+            "link": "https://projecteuler.net/problem=13",
+            "entry-name": "13-large-sum",
+            "title-slug": "large-sum",
+            "problem-number": 13,
+            "difficulty": "5",
+            "date-added": "03-06-2025"
         }
     ]
 }
