@@ -104,6 +104,14 @@
             "problem-number": 13,
             "difficulty": "5",
             "date-added": "03-06-2025"
+        },
+        {
+            "link": "https://projecteuler.net/problem=14",
+            "entry-name": "14-longest-collatz-sequence",
+            "title-slug": "longest-collatz-sequence",
+            "problem-number": 14,
+            "difficulty": "5",
+            "date-added": "03-07-2025"
         }
     ]
 }
