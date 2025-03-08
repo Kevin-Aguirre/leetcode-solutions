@@ -112,6 +112,14 @@
             "problem-number": 14,
             "difficulty": "5",
             "date-added": "03-07-2025"
+        },
+        {
+            "link": "https://projecteuler.net/problem=15",
+            "entry-name": "15-lattice-paths",
+            "title-slug": "lattice-paths",
+            "problem-number": 15,
+            "difficulty": "5",
+            "date-added": "03-08-2025"
         }
     ]
 }
