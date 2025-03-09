@@ -241,6 +241,19 @@
                 "stack",
                 "simulation"
             ]
+        },
+        {
+            "link": "https://leetcode.com/problems/linked-list-cycle/",
+            "entry-name": "141-linked-list-cycle",
+            "title-slug": "linked-list-cycle",
+            "problem-number": "141",
+            "difficulty": "Easy",
+            "date-added": "05-03-2025",
+            "topics": [
+                "hash-table",
+                "linked-list",
+                "two-pointers"
+            ]
         }
     ],
     "pe-problems": [
