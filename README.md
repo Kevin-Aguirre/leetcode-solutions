@@ -43,3 +43,4 @@ class Solution:
 I keep track of the link, tags, and time in each file just for personal convenience. However, I also keep a JSON file with this metadata so I can later parse through it and see what problems I've solved for certain topics (Array, String, etc.), what topics I've solved lately based on time, etc. 
 
 
+ 
