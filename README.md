@@ -55,4 +55,4 @@ some other fields that would be good to add are a "hint" field and "confidence" 
 
 how could the review algorithm work? i dont think randomly selecting n problems would be the best. im thinking of assinging a 
 score to each problem, determined by number of days since review * confidence field. i would sort this score by largest to smallest, 
-pick top k scores (say 50), then randomly select n problems from there. date last reviewd would be updated and confidence score would hopefully change, so next time i review, it would be different problems.  
+pick top k scores (say 50), then randomly select n problems from there. date last reviewd would be updated and confidence score would hopefully change, so next time i review, it would be different problems.  review could open n tabs to the leetcode problems i was interested in
