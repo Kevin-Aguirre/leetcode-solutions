@@ -1,5 +1,163 @@
 {
-    "lc-problems": [],
+    "lc-problems": [
+        {
+            "link": "https://leetcode.com/problems/contains-duplicate/",
+            "entry-name": "217-contains-duplicate",
+            "title-slug": "contains-duplicate",
+            "problem-number": "217",
+            "difficulty": "Easy",
+            "date-added": "04-12-2025",
+            "topics": [
+                "array",
+                "hash-table",
+                "sorting"
+            ]
+        },
+        {
+            "link": "https://leetcode.com/problems/valid-anagram/",
+            "entry-name": "242-valid-anagram",
+            "title-slug": "valid-anagram",
+            "problem-number": "242",
+            "difficulty": "Easy",
+            "date-added": "04-12-2025",
+            "topics": [
+                "hash-table",
+                "string",
+                "sorting"
+            ]
+        },
+        {
+            "link": "https://leetcode.com/problems/two-sum/",
+            "entry-name": "1-two-sum",
+            "title-slug": "two-sum",
+            "problem-number": "1",
+            "difficulty": "Easy",
+            "date-added": "04-12-2025",
+            "topics": [
+                "array",
+                "hash-table"
+            ]
+        },
+        {
+            "link": "https://leetcode.com/problems/group-anagrams/",
+            "entry-name": "49-group-anagrams",
+            "title-slug": "group-anagrams",
+            "problem-number": "49",
+            "difficulty": "Medium",
+            "date-added": "04-12-2025",
+            "topics": [
+                "array",
+                "hash-table",
+                "string",
+                "sorting"
+            ]
+        },
+        {
+            "link": "https://leetcode.com/problems/top-k-frequent-elements/",
+            "entry-name": "347-top-k-frequent-elements",
+            "title-slug": "top-k-frequent-elements",
+            "problem-number": "347",
+            "difficulty": "Medium",
+            "date-added": "04-12-2025",
+            "topics": [
+                "array",
+                "hash-table",
+                "divide-and-conquer",
+                "sorting",
+                "heap-priority-queue",
+                "bucket-sort",
+                "counting",
+                "quickselect"
+            ]
+        },
+        {
+            "link": "https://leetcode.com/problems/product-of-array-except-self/",
+            "entry-name": "238-product-of-array-except-self",
+            "title-slug": "product-of-array-except-self",
+            "problem-number": "238",
+            "difficulty": "Medium",
+            "date-added": "04-12-2025",
+            "topics": [
+                "array",
+                "prefix-sum"
+            ]
+        },
+        {
+            "link": "https://leetcode.com/problems/valid-sudoku/",
+            "entry-name": "36-valid-sudoku",
+            "title-slug": "valid-sudoku",
+            "problem-number": "36",
+            "difficulty": "Medium",
+            "date-added": "04-12-2025",
+            "topics": [
+                "array",
+                "hash-table",
+                "matrix"
+            ]
+        },
+        {
+            "link": "https://leetcode.com/problems/longest-consecutive-sequence/",
+            "entry-name": "128-longest-consecutive-sequence",
+            "title-slug": "longest-consecutive-sequence",
+            "problem-number": "128",
+            "difficulty": "Medium",
+            "date-added": "04-12-2025",
+            "topics": [
+                "array",
+                "hash-table",
+                "union-find"
+            ]
+        },
+        {
+            "link": "https://leetcode.com/problems/valid-parentheses/",
+            "entry-name": "20-valid-parentheses",
+            "title-slug": "valid-parentheses",
+            "problem-number": "20",
+            "difficulty": "Easy",
+            "date-added": "04-12-2025",
+            "topics": [
+                "string",
+                "stack"
+            ]
+        },
+        {
+            "link": "https://leetcode.com/problems/min-stack/",
+            "entry-name": "155-min-stack",
+            "title-slug": "min-stack",
+            "problem-number": "155",
+            "difficulty": "Medium",
+            "date-added": "04-12-2025",
+            "topics": [
+                "stack",
+                "design"
+            ]
+        },
+        {
+            "link": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+            "entry-name": "150-evaluate-reverse-polish-notation",
+            "title-slug": "evaluate-reverse-polish-notation",
+            "problem-number": "150",
+            "difficulty": "Medium",
+            "date-added": "04-12-2025",
+            "topics": [
+                "array",
+                "math",
+                "stack"
+            ]
+        },
+        {
+            "link": "https://leetcode.com/problems/valid-palindrome/",
+            "entry-name": "125-valid-palindrome",
+            "title-slug": "valid-palindrome",
+            "problem-number": "125",
+            "difficulty": "Easy",
+            "date-added": "04-12-2025",
+            "topics": [
+                "two-pointers",
+                "string"
+            ]
+        }
+    ],
     "pe-problems": [
         {
             "link": "https://projecteuler.net/problem=1",
