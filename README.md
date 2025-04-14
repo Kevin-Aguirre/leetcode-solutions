@@ -59,3 +59,5 @@ pick top k scores (say 50), then randomly select n problems from there. date las
 may be nice as well, it would be gratifying to see constant progress. autofill would be good too. 
 
 maybe ill also note questions that are a part of some 'special' category, eg leetcode 75 or top 150 interview questions on leetcode. 
+
+i should also automate commits when simple, e.g. if i just added 3 problems make a bash script that commmits (git commit -m "added [slug of each new problem]")
