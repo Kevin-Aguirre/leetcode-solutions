@@ -1,0 +1,3 @@
+# 1290. Convert Binary Number in a Linked List to Integer
+
+## Solution 1

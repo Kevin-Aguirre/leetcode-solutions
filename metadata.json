@@ -156,6 +156,42 @@
                 "two-pointers",
                 "string"
             ]
+        },
+        {
+            "link": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+            "entry-name": "19-remove-nth-node-from-end-of-list",
+            "title-slug": "remove-nth-node-from-end-of-list",
+            "problem-number": "19",
+            "difficulty": "Medium",
+            "date-added": "04-14-2025",
+            "topics": [
+                "linked-list",
+                "two-pointers"
+            ]
+        },
+        {
+            "link": "https://leetcode.com/problems/convert-binary-number-in-a-linked-list-to-integer/",
+            "entry-name": "1290-convert-binary-number-in-a-linked-list-to-integer",
+            "title-slug": "convert-binary-number-in-a-linked-list-to-integer",
+            "problem-number": "1290",
+            "difficulty": "Easy",
+            "date-added": "04-14-2025",
+            "topics": [
+                "linked-list",
+                "math"
+            ]
+        },
+        {
+            "link": "https://leetcode.com/problems/count-good-triplets/",
+            "entry-name": "1534-count-good-triplets",
+            "title-slug": "count-good-triplets",
+            "problem-number": "1534",
+            "difficulty": "Easy",
+            "date-added": "04-14-2025",
+            "topics": [
+                "array",
+                "enumeration"
+            ]
         }
     ],
     "pe-problems": [
