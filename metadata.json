@@ -192,6 +192,18 @@
                 "array",
                 "enumeration"
             ]
+        },
+        {
+            "link": "https://leetcode.com/problems/rotate-list/",
+            "entry-name": "61-rotate-list",
+            "title-slug": "rotate-list",
+            "problem-number": "61",
+            "difficulty": "Medium",
+            "date-added": "04-16-2025",
+            "topics": [
+                "linked-list",
+                "two-pointers"
+            ]
         }
     ],
     "pe-problems": [
