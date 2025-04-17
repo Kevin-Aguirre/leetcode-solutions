@@ -204,6 +204,17 @@
                 "linked-list",
                 "two-pointers"
             ]
+        },
+        {
+            "link": "https://leetcode.com/problems/delete-node-in-a-linked-list/",
+            "entry-name": "237-delete-node-in-a-linked-list",
+            "title-slug": "delete-node-in-a-linked-list",
+            "problem-number": "237",
+            "difficulty": "Medium",
+            "date-added": "04-17-2025",
+            "topics": [
+                "linked-list"
+            ]
         }
     ],
     "pe-problems": [
