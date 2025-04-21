@@ -228,6 +228,19 @@
                 "string",
                 "stack"
             ]
+        },
+        {
+            "link": "https://leetcode.com/problems/baseball-game/",
+            "entry-name": "682-baseball-game",
+            "title-slug": "baseball-game",
+            "problem-number": "682",
+            "difficulty": "Easy",
+            "date-added": "04-21-2025",
+            "topics": [
+                "array",
+                "stack",
+                "simulation"
+            ]
         }
     ],
     "pe-problems": [
