@@ -215,6 +215,19 @@
             "topics": [
                 "linked-list"
             ]
+        },
+        {
+            "link": "https://leetcode.com/problems/crawler-log-folder/",
+            "entry-name": "1598-crawler-log-folder",
+            "title-slug": "crawler-log-folder",
+            "problem-number": "1598",
+            "difficulty": "Easy",
+            "date-added": "04-21-2025",
+            "topics": [
+                "array",
+                "string",
+                "stack"
+            ]
         }
     ],
     "pe-problems": [
