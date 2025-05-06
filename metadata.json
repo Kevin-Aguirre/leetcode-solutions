@@ -254,6 +254,19 @@
                 "linked-list",
                 "two-pointers"
             ]
+        },
+        {
+            "link": "https://leetcode.com/problems/add-two-numbers/",
+            "entry-name": "2-add-two-numbers",
+            "title-slug": "add-two-numbers",
+            "problem-number": "2",
+            "difficulty": "Medium",
+            "date-added": "05-06-2025",
+            "topics": [
+                "linked-list",
+                "math",
+                "recursion"
+            ]
         }
     ],
     "pe-problems": [
