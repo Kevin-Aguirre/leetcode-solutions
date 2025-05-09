@@ -267,6 +267,20 @@
                 "math",
                 "recursion"
             ]
+        },
+        {
+            "link": "https://leetcode.com/problems/lru-cache/",
+            "entry-name": "146-lru-cache",
+            "title-slug": "lru-cache",
+            "problem-number": "146",
+            "difficulty": "Medium",
+            "date-added": "05-09-2025",
+            "topics": [
+                "hash-table",
+                "linked-list",
+                "design",
+                "doubly-linked-list"
+            ]
         }
     ],
     "pe-problems": [
